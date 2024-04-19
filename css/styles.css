@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------- HEADER - ELEMENT (PRODUCTO 01) -------------- */
+
+.element__header{
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    height: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.element__headerDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+.element__button{
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 8rem;
+    font-weight: bold;
+}
+
+/* ----------------- MAIN - ELEMENT (PRODUCTO 01) -------------- */
+
+.element__main{
+    margin-top: 15%;
+    animation-duration: 2s;
+    animation-name: slide-up;
+}
+
+@keyframes slide-up {
+    from {
+        margin-top: 100%;
+        width: 100%;
+      }
+    
+      to {
+        margin-top: 15%;
+        width: 100%;
+      }
+}
+
+.element__main{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.element__mainDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element__divText{
+    width: 50%;
+    margin: 0 10rem;
+}
+
+.element__divImg{
+    width: 50%;
+}
+
+.element__divText:nth-child(2){
+    display: none;
+}
+
+.element__divImg:nth-child(4){
+   display: none;
+}
+
+.product__divText{
+    width: 50%;
+    margin: 0 10rem;
+}
+
+.product__divImg{
+    width: 50%;
+}
+
+.product__divText:nth-child(1){
+    display: none;
+}
+
+.product__divImg:nth-child(3){
+    display: none;
+ }
+
+
+.divImg__img{
+    width: 25rem;
+    height: auto;
+}
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+
+/* ----------------- FOOTER - ELEMENT (PRODUCTO 01)-------------- */
+
+.element__footer{
+    position: fixed;
+    bottom: 2rem;
+    width: 100%;
+    height: 3rem;
+    margin: 0 10rem;
+}
+
+.footer__button{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer__pNum{
+    font-weight: bold;
+}
+
+
+/* ----------------- HEADER - MENÚ HAMBURGUESA -------------- */
+
+.header__div{
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    animation-duration: 2s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 200%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+
+}
+
+.header__nav{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__listDiv{
+    width: 60%;
+}
+
+.header__list{
+    list-style-type: none;
+    margin: 10rem 1rem;
+}
+
+.header__listItem{
+    margin: 3rem;
+}
+
+.list__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.header__listButton{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+
+/* ----------------- MENU - MENU.JSX -------------- */
+
+.menu__list{
+    margin: 3rem 0;
+    list-style-type: none;
+    font-size: .8rem; 
+    animation-duration: 2s;
+    animation-name: list-slide-up;
+}
+
+
+@keyframes list-slide-up {
+    from {
+        opacity: 0%;
+        width: 0%;
+        height: 0%;
+      }
+    
+      to {
+        opacity: 100%;
+        width: 100%;
+        height: auto;
+      }
+}
+
+.menu__listItem{
+    margin: 1.5rem 0;   
+}
+
+.menu__button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgba(169, 169, 169, 0.4);
+}
+
