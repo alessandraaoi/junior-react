@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path = '/' element = {<App/>}></Route>
             <Route path = '/menu' element = {<Header/>}></Route>
             <Route path = '/products' element = {<Element/>}></Route>
-            <Route path = '/dunes-anthrazite-black' element = {<Producto/>}></Route>
+            <Route path = '/products/dunes-anthrazite-black' element = {<Producto/>}></Route>
             <Route path = '/show-menu' element = {<Menu/>}></Route>
 
         </Routes>

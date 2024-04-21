@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { CiMenuFries } from "react-icons/ci";
 import { useState, useEffect } from 'react';
 
 function Producto() {
@@ -40,14 +39,14 @@ function Producto() {
   }
 
   function secondProduct(){
-    window.location.replace ('/dunes-anthrazite-black'); 
+    window.location.replace ('/products/dunes-anthrazite-black'); 
   }
 
 return (
   <>
       <header className='element__header'>
         <div className='element__headerDiv'><p className='element__headerText'>mater</p>
-        <button onClick={showHeader} className='element__button'><Link to = '/menu' className='element__link'><CiMenuFries /></Link></button>
+        <button onClick={showHeader} className='element__button'><Link to = '/menu' className='element__link'>&raquo;</Link></button>
         </div>
     
       </header>
@@ -84,7 +83,7 @@ return (
   
     <div className='element__footerDiv'>
     <button onClick={firstProduct} className='footer__button'><p className='footer__p footer__pNum'>01</p><Link to = '/products' className='footer__link'><p className='footer__p'>Shell Dining Chair</p></Link></button>
-        <button onClick={secondProduct} className='footer__button'><p className='footer__p footer__pNum'>02</p><Link to = '/dunes-anthrazite-black' className='footer__link'><p className='footer__p'>Dunes Anthrazite Black</p></Link></button>
+        <button onClick={secondProduct} className='footer__button'><p className='footer__p footer__pNum'>02</p><Link to = '/products/dunes-anthrazite-black' className='footer__link'><p className='footer__p'>Dunes Anthrazite Black</p></Link></button>
     </div>
   </footer>  
 

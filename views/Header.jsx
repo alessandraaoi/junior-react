@@ -2,8 +2,6 @@
 
 import React from 'react'
 
-import { IoClose } from "react-icons/io5";
-
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
@@ -22,7 +20,7 @@ function Header() {
     <>
     <div className='header__div'>
      <nav className='header__nav'>
-      <div className='header__divIcon'><Link to = '/'><IoClose /></Link></div>
+      <div className='header__divIcon'><Link to = '/'>&times;</Link></div>
       <div className='header__listDiv'>
       
       <ul className='header__list'>
